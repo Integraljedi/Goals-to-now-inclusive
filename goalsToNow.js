@@ -6,13 +6,121 @@
 
 $(document).ready(function(){
 
-
+// set up a debug mode to be changed to false on deployment
+// ||========================================================||
+// || 
+// 
 	var _DEBUG = true;
+
+// set up an array (for testing) of tracking items as objects
+
+// ||========================================================||
+// || 
+// 
 
 	var items = [];
 
+
+// ||========================================================||
+// || create an initial demo
+// 
+
+	var demoMode = true;
+
+// ||========================================================||
+// || load that which is in memory if it exists
+// 
+
+
+
+if(localStorage.yearSpot != undefined){
+  console.log("this is not your first time in yearsPot, grasshopper " );
+  $(".yearsSpot").find(".log").html(localStorage.yearSpot); 
+
+}
+
+if(localStorage.monthsSpot != undefined){
+  console.log("this is not your first time in monthsSpot, grasshopper " );
+  $(".yearsSpot").find(".log").html(localStorage.monthsSpot); 
+
+}
+
+if(localStorage.weekSpot != undefined){
+  console.log("this is not your first time in weekSpot, grasshopper " );
+  $(".weekSpot").find(".log").html(localStorage.yearSpot); 
+
+}
+
+
+if(localStorage.daySpot != undefined){
+  console.log("this is not your first time in yearsPot, grasshopper " );
+  $(".yearsSpot").find(".log").html(localStorage.yearSpot); 
+
+}
+
+
+
+
+
+// ||========================================================||
+// || Save the contents of the document added by the user to local storage
+// 
+
+
+var SaveThisDocumentState = function (){
+
+        localStorage.yearSpot =  $(".yearsSpot").find(".log").html(); 
+        localStorage.monthsSpot =  $(".monthsSpot").find(".log").html(); 
+        localStorage.weekSpot =  $(".weekSpot").find(".log").html(); 
+        localStorage.daySpot =  $(".daySpot").find(".log").html(); 
+
+}
+
+
+
+
+// ||========================================================||
+// || trigger saving the content on document reload or unload
+// 
+
+// @weakness of this approach: there are ways of exiting the document that will
+// not trigger this and thus not record data, 
+// @benefit of this approach, it may decrease actual memory needed compared to the 
+// next best simple approach
+// ideal: save each entry as an object in an array, bind the display to that array of 
+// objects, bind a back end database to that array of objects, thus enable multi browser 
+// functionality
+
+    $(window).unload(function(){
+
+          SaveThisDocumentState();
+    });
+   
+
+
+
 // track the last submitted space to identify patterns in user pathways
+// (for testing)
+// ||========================================================||
+// || 
+// 
 	var lastSubmission = "notDefinedYet";
+
+
+// ||========================================================||
+// || set up for demo mode
+// for testing popovers
+
+// if (demoMode){
+
+// 		$("input").popover(
+// 			"container:body"
+// 			);
+// 	    $('.focusLog').popover("placement:right")
+
+
+
+// }
 
 
 // clear a menu based on user input... 
