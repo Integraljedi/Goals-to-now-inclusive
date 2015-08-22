@@ -20,19 +20,32 @@ width: 70%;
 }
 
 #scroller{
-/*	padding-left: 16%;
-*/}
+	padding-left: 0px;
+}
 
 .viewSpot{
 
 	width:22vw;
+	min-width: 332px;
+	overflow: scroll;
 	z-index: 0;
+	max-height: 564px;
+    box-shadow: 1px 1px 5px grey;   
+
+}
+
+
+.viewSpotActive{
+
+		box-shadow: 4px 7px 22px #687AAE;
 
 }
 
 #coachingArea{
 
 	opacity: 1;
+	    box-shadow: 1px 1px 5px grey;   
+
 }
 
 .navigationButtons{
@@ -41,6 +54,13 @@ width: 70%;
 }
 
 body{
+
+}
+
+.coachingColumn{
+
+	padding-left: 0px;
+	margin-top:10px;
 
 }
 
