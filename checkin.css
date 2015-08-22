@@ -1,0 +1,181 @@
+.mainCheckInArea{
+
+	margin: 10px;
+}
+
+._content{
+
+
+
+}
+
+.test{
+
+min-height: 220px;
+min-width: 260px;
+margin: 5px;
+padding: 5px;
+}
+
+.viewSpot{
+
+	margin: 10px;
+}
+
+._prefix{
+
+	/*add a fade in effect to these on hover*/
+        color:#7E7E7E;
+        -webkit-transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -ms-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
+        transition: background 0.5s linear;
+
+}
+
+#scroller{
+
+	padding-left: 14px;
+}
+
+
+._prefix:hover{
+        color:#535353;
+
+}
+
+.viewSpotActive{
+
+		box-shadow: 0px 0px 22px #687AAE;
+
+}
+
+body{
+
+	font-family: Avenir !important;
+	font-size: 16px
+}
+
+.panel-area{
+
+
+	background-color: rgba(255, 255, 255, 0.21);
+
+}
+
+
+/*where the logs go, add scrolling*/
+#coachingArea{
+
+	height: 80 vh;
+	overflow: scroll;
+	z-index: 1;
+	width: 25 vw;
+	height: 75 vh;
+	border-radius: 4px;
+
+	background-color: #FFF;
+	padding: 19px;
+
+
+}
+
+#wrapper{
+
+	background-color: white;
+	opacity: none;
+}
+
+#mainCheckInArea{
+
+	width:130%;
+/*	margin-left:30%; 
+*/	overflow:hidden;
+	
+}
+
+/*where the logs go, add scrolling*/
+.logArea{
+
+	height: 80vh;
+	overflow: scroll;
+
+}
+
+
+.focusItem{
+
+border-bottom: thin solid darkgrey;
+ }
+
+
+ /* set up the glow for the overarching menu buttons*/
+
+._pItem:hover{
+    border: thin;
+/*	border: thin none rgba(28, 24, 44, 0.61);
+*/	box-shadow: 0px 0px 22px #687AAE;
+	padding: 2px;
+/*	background-color: #9F9F9F;
+*/}
+
+
+._pItem {  
+	/*add a fade in effect to these on hover*/
+        color:#000;
+  
+         -webkit-transition: box-shadow 0.5s linear;
+        -moz-transition: box-shadow 0.5s linear;
+        -ms-transition: box-shadow 0.5s linear;
+        -o-transition: box-shadow 0.5s linear;
+        transition: box-shadow 0.5s linear;
+
+
+        border-radius: 4px;
+}
+._pItem:hover { 
+	background-color: white; 
+	color:#000;  
+	box-shadow: 0px 0px 22px #687AAE;
+}
+
+.guidance{
+
+	color: grey;
+}
+
+.mainCheckInArea{
+
+	background-color: rgba(255, 255, 255, 0.89);
+}
+
+.log{
+
+/*	background-color: white;
+*/	border-radius: 3px;
+}
+
+.input-lg{
+	background-color: rgba(255, 255, 255, 0.89);
+
+
+}
+
+.input-lg:focus{
+	background-color: rgba(255, 255, 255, 1);
+
+	
+}
+
+
+.container{
+
+	padding-left:4px ;
+	padding-right:4px;
+}
+
+.col-sm-6{
+	width: 49%;
+
+}

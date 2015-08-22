@@ -1,0 +1,46 @@
+
+
+.col-sm-4{
+
+width: 25%;
+	;}
+
+.coachingColumn{
+
+width: 400px;
+	;}
+.col-sm-8{
+
+width: 70%;
+}
+
+.row{
+
+	margin: 0px;
+}
+
+#scroller{
+/*	padding-left: 16%;
+*/}
+
+.viewSpot{
+
+	width:22vw;
+	z-index: 0;
+
+}
+
+#coachingArea{
+
+	opacity: 1;
+}
+
+.navigationButtons{
+
+	text-align: center;
+}
+
+body{
+
+}
+

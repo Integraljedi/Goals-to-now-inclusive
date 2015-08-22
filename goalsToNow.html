@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+
+<!--  <html manifest="demo.appcache"> experiment for app caching via http://www.w3schools.com/html/html5_app_cache.asp 
+-->
+<html>
+
+
+
+
+
+
+<head>
+
+  <title >Integral Inquiry</title>
+  <meta charset="utf-8">
+
+
+  <!-- *** local files for testing *** -->
+  <script src="jquery-1.11.2.js"></script>
+  <script src="goalsToNow.js"></script>
+  <script src="angular.min.js"></script>
+  <div ng-app="" class="test2">
+    <script src="bootstrap.min.js"></script>      
+    <link rel="stylesheet" href="bootstrap-theme.min.css">     
+    <link rel="stylesheet" href="bootstrap.min.css">   
+    <link rel="stylesheet" href="checkin.css">   
+    <link rel="stylesheet" href="goalsToNow.css">   
+
+
+  </head>
+
+  <body style="background-color:black;">
+    
+
+
+      
+
+    <div id="mainCheckInArea" class="mainCheckInArea panel-body panel">
+
+
+
+
+
+         <div class="container" style="width:150vw; display:inline;">
+
+
+
+        <div class="btn-group navigationButtons" style="margin-left:500px;" data-toggle="buttons-checkbox">
+          <button type="button" class="btn btn-primary yearsTrigger">5 Years</button>
+          <button type="button" class="btn btn-primary monthsTrigger">3 Months</button>
+          <button type="button" class="btn btn-primary weeksTrigger">This Weeks Goals</button>
+          <button type="button" class="btn btn-primary todaysTrigger">Todays Goals</button>
+        </div>
+
+
+
+          <div class="row panel-area  " >
+
+           <div id="scroller" style="width:120vw;overflow:scroll">
+          
+                <div style="" id="" class="col-sm-3 coachingColumn">
+
+
+                        <h4> Check In Here <h4>
+                          <!-- create scrolling area -->
+                            <div id="coachingArea">
+                              <div id="wrapper">
+
+                              <h4> Choose your focus <h4>
+                               <textarea label="focus"class="form-control input-lg focusLog" autocomplete="on" type="text" rows="1" id=""  ng-model="focus" text="This Moment" placeholder="What are you focused on?">This Moment</textarea>
+
+                               <h6 class="pull-right guidance"> Press Enter at any point to add to your log </h6>
+
+
+                               <textarea class="form-control input-lg statusLog" autocomplete="off" type="text" rows="1" id=""  placeholder="Progress check in on?"></textarea>
+                               <textarea class="form-control input-lg ideaLog" autocomplete="off" type="text" rows="1" id=""  placeholder="New Ideas?"></textarea>
+                               <textarea label="challenges"class="form-control input-lg challengeLog" autocomplete="off" type="text" rows="1" id=""  ng-model="challenges" placeholder="New Challenges?"></textarea>
+                               <textarea class="form-control input-lg timeLog" autocomplete="off" type="text" rows="1" id=""  placeholder="Time Spent on something?"></textarea>
+                               <textarea class="form-control input-lg alivenessLog" autocomplete="off" type="text" rows="1" id=""  placeholder="Something in particular alive for you right now??"></textarea>
+                               <textarea class="form-control input-lg newDesireLog" autocomplete="off" type="text" rows="1" id=""  placeholder="Something you are wanting from this?"></textarea>
+                               <textarea class="form-control input-lg stateLog" autocomplete="off" type="text" rows="1" id=""  placeholder="Your state of consciousness?"></textarea>
+                               <h6 class="pull-right guidance"> At any point reflect on your experience here </h6>
+
+                               <textarea id="lookingInwards" class="form-control input-lg beingLog" autocomplete="off" type="text" rows="1" id=""  placeholder="What is it like being with this?"></textarea>
+                               <h6 class="pull-right guidance"> Click on any item to make it your new focus and dig in </h6>
+
+                               <br>
+                               <br>
+                             </div>
+                           </div>
+                         </div>
+
+
+            <div class="col-sm-3 viewSpot viewSpotActive yearsSpot"  >
+
+              <div>
+                <h4 id="logTitle" class="inline-block ">5 year goals</h4>
+                <span class="pull-right btn-link resetThis inline-block"> reset </span>
+                <br>
+              </div>
+              <!-- create scrolling area for log -->
+              <div class="logArea"> 
+
+                <br>
+
+                <div class="log" >
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-3 viewSpot monthsSpot" >
+
+              <div>
+                <h4 id="logTitle" class="inline-block ">3 month goals</h4>
+                <span class="pull-right btn-link resetThis inline-block"> reset </span>
+                <br>
+              </div>
+              <!-- create scrolling area for log -->
+              <div class="logArea"> 
+
+                <br>
+
+                <div class="log" >
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-3 viewSpot weekSpot" >
+
+              <div>
+                <h4 id="logTitle" class="inline-block ">This weeks goals</h4>
+                <span class="pull-right btn-link resetThis inline-block"> reset </span>
+                <br>
+              </div>
+              <!-- create scrolling area for log -->
+              <div class="logArea"> 
+
+                <br>
+
+                <div class="log" >
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-sm-3 viewSpot daySpot" >
+
+              <div>
+                <h4 id="logTitle" class="inline-block ">Todays Goals</h4>
+                <span class="pull-right btn-link resetThis inline-block"> reset </span>
+                <br>
+              </div>
+              <!-- create scrolling area for log -->
+              <div class="logArea"> 
+
+                <br>
+
+                <div class="log" >
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </body>
